@@ -1,0 +1,138 @@
+$width: 20%
+$green: green
+$title-size: 1.7rem
+$content-size: 1.1rem
+body
+    font-family: "Open Sans", sans-serif
+    background: #141E30
+    background: -webkit-linear-gradient(to right, #243B55, #141E30)
+    background: linear-gradient(to right, #243B55, #141E30)
+    color: white
+    margin: 0
+    padding: 0
+
+.Header
+    background: #141E30
+    padding: 10px
+    font-size: 1.3rem
+    border-bottom: 1px solid rgba(70,70,70,0.9)
+    position: fixed
+    width: 100%
+    height: 30px
+    top: 0
+    left: 0
+    overflow: hidden
+    box-shadow: 1px 1px 1px rgba(30,30,30,0.9)
+    a
+        color: white
+        text-decoration: none
+        &:hover
+            text-decoration: underline
+
+        
+    
+
+.App
+    margin: 50px 10px 10px 10px
+
+p
+    margin-block-start: 0em
+    margin-block-end: 0em
+
+.Show__Image
+    width: $width 
+    height: 100%
+    display: inline-flex
+    justify-content: center
+    align-items: center
+    overflow: hidden !important
+    img
+            cursor: pointer
+            height: 100%
+            padding: 0
+            position: inherit
+            background-size: 100% auto 
+            background-position: center center
+            &::after
+                content: ''
+                width: 100%
+                position: relative
+                display: block
+                height: 1px
+                background-color: white
+
+ul 
+    list-style-type: none 
+    padding: 0 10px
+   
+li 
+    margin: 20px 0   
+    border: 1px solid rgba(255,255,255,0.6)
+    padding: 20px 15px
+    height: 250px
+    box-shadow: 1px 2px 4px rgba(255,255,255,0.6)
+.Show__Info
+    display: inline-block
+    vertical-align: top
+    width: calc(100% - #{$width} - 20px)
+    margin: 0 10px
+    p
+        display: inline-block
+        font-weight: 100
+    
+  
+    .Show__Title__Note
+        font-size: 1rem
+        margin-left: 5px
+    
+    .Text__green
+        color: $green
+        text-decoration: none
+    
+    .Show__Info__Inner
+        div
+            display: inline-flex
+            border: 1px solid rgba(255,255,255,0.6)
+            box-shadow: 1px 2px 4px rgba(255,255,255,0.6)
+            padding: 20px
+            margin: 10px
+    .Show__Title
+        font-size: $title-size
+        .Text__green
+            &:hover
+                text-decoration: underline
+                cursor: pointer
+            
+        
+        &:hover
+            text-decoration: underline
+            cursor: pointer
+        
+    
+    .Show__Card
+        width: 100%
+        height: 100%
+        margin-top: 10px
+        font-size: 1rem
+        .Show__Genres
+            display: inline-block
+            font-weight: 900
+            font-size: $title-size
+            vertical-align: top
+            width: 20%
+        .Genres
+            width: 80%
+            display: inline-block
+            font-size: $content-size
+            margin-top: 5px
+            p
+                display: block
+
+.Error__massage
+    font-size: 2rem
+    text-align: center
+    width: 100%
+    height: 100%
+    display: flexbox
+    vertical-align: center
+    color: red
