@@ -10,7 +10,7 @@ export default function Header() {
       <Link href="/">
         <a style={linkStyle}>Home</a>
       </Link>
-      <Link href="/Shows">
+      <Link href="https://github.com/sarpere/React-js-Batman-Tv-Shows">
         <a style={linkStyle}>Github</a>
       </Link>
     </div>
