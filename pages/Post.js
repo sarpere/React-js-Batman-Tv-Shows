@@ -4,7 +4,6 @@ import { connect } from "react-redux";
 import { bindActionCreators } from 'redux'
 import axios from 'axios'
 import { setTvShowsDetails } from '../store'
-import "../style.sass"
 
 class Post extends Component {
     render() {

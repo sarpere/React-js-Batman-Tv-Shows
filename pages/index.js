@@ -5,10 +5,8 @@ import React, { Component } from 'react'
 import { connect } from "react-redux";
 import { bindActionCreators } from 'redux'
 import { setTvShows } from '../store'
-import "../style.sass"
 class Index extends Component {
   render() {
-    console.log(this.props.tvShows)
     return (
       <Layout>
         <h1>Batman TV Shows</h1>

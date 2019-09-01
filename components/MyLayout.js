@@ -1,5 +1,5 @@
 import Header from './Header'
-
+import '../style.sass'
 
 
 export default function Layout(props) {
