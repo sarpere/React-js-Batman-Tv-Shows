@@ -6,8 +6,10 @@ import axios from 'axios'
 import { setTvShowsDetails } from '../store'
 
 class Post extends Component {
+
     render() {
-        const data = this.props.tvShows_Details[`${this.props.id}`]
+        console.log(this.props)
+        const data = this.props.id || this.props.id !== "undefined" ? this.props.tvShows_Details[`${this.props.id}`] : null
         return (
             data ?
                 <Layout>
@@ -42,14 +44,20 @@ class Post extends Component {
 Post.getInitialProps = async function (context) {
     const { store } = context
     const { id } = context.query
+    console.log(context.query)
+    if (!id) return 0
     if (store.getState().tvShows_Details)
         if (store.getState().tvShows_Details[`${id}`])
             return {
                 id: id
             }
-    const res = await axios.get(`https://api.tvmaze.com/shows/${id}`)
-    const show = await res.data
-    store.dispatch(setTvShowsDetails(id, show))
+    var show = null;
+
+    await axios.get(`https://api.tvmaze.com/shows/${id}`).then(res => {
+        show = res.data
+        store.dispatch(setTvShowsDetails(id, show))
+      
+    })
     return {
         id: id
     }

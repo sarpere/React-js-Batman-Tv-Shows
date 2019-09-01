@@ -46,10 +46,12 @@ class Index extends Component {
 
 Index.getInitialProps =
 
-  async function ({ store }) {
+   async function ({ store }) {
     if (store.getState().tvShows) return 0
-    const res = await axios.get('https://api.tvmaze.com/search/shows?q=batman')
-    const data = await res.data
+    var data = null
+    await axios.get('https://api.tvmaze.com/search/shows?q=batman').then(res => {
+     data =  res.data
+  })
     store.dispatch(setTvShows(data))
     return {
       data: data

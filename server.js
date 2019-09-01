@@ -20,13 +20,7 @@ app.prepare().then(() => {
   const server = express()
 
   server.get('/', (req, res) => ssrCache({ req, res, pagePath: '/' }))
-
-  server.get('/Post', (req, res) => {
-    const queryParams = { id: req.params.id }
-    const pagePath = '/Post'
-    return ssrCache({ req, res, pagePath, queryParams })
-  })
-
+  server.get('/Post', (req, res) => ssrCache({ req, res, pagePath: '/Post' }))
   server.get('*', (req, res) => handle(req, res))
 
   server.listen(port, err => {
