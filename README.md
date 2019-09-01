@@ -5,6 +5,6 @@ React js Batman Tv Shows with SSR and redux
    	
 	 $ npm i 
 
-	 npm run dev 
+	 $ npm run dev 
 
 
