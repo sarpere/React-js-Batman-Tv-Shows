@@ -1,0 +1,48 @@
+{
+  "mini-css-extract-plugin ../Batman Tv Shows/node_modules/css-loader/index.js??ref--7-1!../Batman Tv Shows/node_modules/sass-loader/lib/loader.js??ref--7-2!../Batman Tv Shows/style.sass": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "modules": {
+    "byIdentifier": {
+      "css ../Batman Tv Shows/node_modules/css-loader/index.js??ref--7-1!../Batman Tv Shows/node_modules/sass-loader/lib/loader.js??ref--7-2!../Batman Tv Shows/style.sass 0": 0
+    },
+    "usedIds": {
+      "0": 0
+    }
+  },
+  "chunks": {
+    "byName": {
+      "commons": 0,
+      "static/runtime/webpack.js": 1,
+      "static/iQW45yCr6h7f7Ck1BEsdy/pages/Post.js": 2,
+      "static/iQW45yCr6h7f7Ck1BEsdy/pages/_app.js": 3,
+      "static/iQW45yCr6h7f7Ck1BEsdy/pages/_error.js": 4,
+      "static/iQW45yCr6h7f7Ck1BEsdy/pages/index.js": 5,
+      "static/runtime/main.js": 6
+    },
+    "bySource": {},
+    "usedIds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  }
+}
